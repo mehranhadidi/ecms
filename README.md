@@ -9,3 +9,6 @@ Code by cruelcap (mehran.hadidi@gmail.com) & biodread (biodread.0@gmail.com).
 Feel free to join our project.
 
 Lets have fun & Lets build somthing amazing <3
+
+## Copyright
+Copyrighted 2014.
