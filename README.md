@@ -1,6 +1,4 @@
 #ECMS
-====
-
 HMVC Personal Framework
 
 ## Description
