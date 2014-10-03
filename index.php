@@ -92,12 +92,14 @@ unset($application, $modules, $core);
  *------------------------------------------------------------------------*/
 
 /*
- * check if there was any _install.php in the project root then load it to check
+ * check if there was any install.php in the project root then load it to check
  * apache & php configs
  */
 
-if(file_exists(BASEPATH . 'install.php'))
-	return require_once BASEPATH . 'install.php';
+//TODO initialise install.php
+
+/*if(file_exists(BASEPATH . 'install.php'))
+	return require_once BASEPATH . 'install.php';*/
 
 
 /**------------------------------------------------------------------------
