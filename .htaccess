@@ -1,5 +1,6 @@
 # Turn on URL rewriting
 RewriteEngine On
+RewriteBase /Projects/ecms
 
 # Allow any files or directories that exist to be displayed directly
 RewriteCond %{REQUEST_FILENAME} !-f
