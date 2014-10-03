@@ -96,7 +96,7 @@ unset($application, $modules, $core);
  * apache & php configs
  */
 
-if(file_exists(BASEPATH . '_install.php'))
+if(file_exists(BASEPATH . 'install.php'))
 	return require_once BASEPATH . 'install.php';
 
 
