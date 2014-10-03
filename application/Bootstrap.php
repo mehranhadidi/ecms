@@ -19,4 +19,6 @@ $base_url = isset($_GET['url']) ? $_GET['url'] : null;
 $base_url = rtrim($base_url, '/');
 $base_url = explode('/', $base_url);
 
+echo '<pre>';
 print_r($base_url);
+echo '</pre>';
