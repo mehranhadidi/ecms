@@ -107,6 +107,6 @@ unset($application, $modules, $core);
  *------------------------------------------------------------------------*/
 
 if(file_exists(APPPATH . 'Bootstrap.php'))
-	require_once PPPATH . 'Bootstrap.php';
+	require_once APPPATH . 'Bootstrap.php';
 else
 	exit('Bootstrap.php not found!');
