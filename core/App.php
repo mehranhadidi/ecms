@@ -31,7 +31,9 @@ class App
 	/**
 	 * Initialize the application
 	 *  This method will do the items below :
+	 *
 	 *      1.Parse the URI
+	 *      2.Parse the Behaviors
 	 */
 	public function init ()
 	{
