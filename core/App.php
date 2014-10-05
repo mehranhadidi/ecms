@@ -12,7 +12,7 @@ class App
 	// singleton instance
 	public static $instance;
 
-	private $URI;
+	private $url;
 
 	// Singleton Instantiate
 	public static function getInstance ()
@@ -60,7 +60,7 @@ class App
 		$url = explode('/', $url);
 
 		// make uri accessible all over the class
-		$this->URI = $url;
+		$this->url = $url;
 	}
 
 	/**
