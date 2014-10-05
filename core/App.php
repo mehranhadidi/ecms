@@ -3,7 +3,7 @@
 /**
  * Class App
  *
- * This is the main App controller.
+ * This is the main App class.
  * current running module, language, controller & action will be pointed to this class instance
  */
 
@@ -70,6 +70,6 @@ class App
 	 */
 	private function parse_behaviors ()
 	{
-		
+
 	}
 } 

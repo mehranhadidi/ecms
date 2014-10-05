@@ -17,7 +17,7 @@ setlocale(LC_ALL, 'en_US.utf-8');
 /**
  * Include the Autoloaders
  */
-require_once COREPATH.'Autoloader.php';
+require_once COREPATH . 'Autoloader.php';
 
 // ------------------------------------------------------------------------
 
