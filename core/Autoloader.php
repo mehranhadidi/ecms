@@ -12,6 +12,8 @@
 
 function autoload($className)
 {
+	// Namespace Example: \Zend\Mail\Message => /path/to/project/lib/vendor/Zend/Mail/Message.php
+
 	$className = ltrim($className, '\\');
 	$fileName  = '';
 	$namespace = '';
