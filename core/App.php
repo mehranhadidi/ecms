@@ -14,6 +14,10 @@ class App
 
 	private $URI;
 
+	public $module = null;
+	public $controller = null;
+	public $action = null;
+
 	// Singleton Instantiate
 	public static function getInstance ()
 	{
@@ -55,14 +59,17 @@ class App
 		// if url is defined then get it
 		$url = isset($_GET['url']) ? $_GET['url'] : null;
 
-		// remove the right "/" from the string
-		$url = rtrim($url, '/');
+		if($url != null)
+		{
+			// remove the right "/" from the string
+			$url = rtrim($url, '/');
 
-		// explode the string to the array base on "/"
-		$url = explode('/', $url);
+			// explode the string to the array base on "/"
+			$url = explode('/', $url);
 
-		// make uri accessible all over the class
-		$this->URI = $url;
+			// make uri accessible all over the class
+			$this->URI = $url;
+		}
 	}
 
 	/**
@@ -72,6 +79,21 @@ class App
 	 */
 	private function parse_behaviors ()
 	{
+		//if any URI was available
+		if(count($this->URI)  > 0)
+		{
+			// if was module, load the module controller
+			if(file_exists(MODPATH . $this->URI[0]))
+			{
+				$this->module = $this->URI[0];
+			}
+			// if was not module then load controller directly
+			else
+			{
+				echo 'nothing';
+			}
+		}
 
+		echo 'Module : '. $this->module;
 	}
 } 
