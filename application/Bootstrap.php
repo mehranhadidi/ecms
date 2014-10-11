@@ -19,10 +19,27 @@ setlocale(LC_ALL, 'en_US.utf-8');
  */
 require_once COREPATH . 'Autoloader.php';
 
+/**
+ * Load Configs
+ */
+Config::SMART_ATTACH('database');
+
 // ------------------------------------------------------------------------
 
 /*
  * instantiate the application
  */
 $app = App::getInstance();
-$app->init();
+$app->init(array(
+	// default controller
+	'controller'                => 'Welcome',
+
+	// default action
+	'action'                    => 'index',
+
+	// default module controller
+	'module_controller'         => 'init',
+
+	// default module action
+	'module_action'             => 'index',
+));
