@@ -1,4 +1,4 @@
-<?php
+<?php defined('COREPATH') or die('No direct script access.');
 
 /**
  * Auto Loaders

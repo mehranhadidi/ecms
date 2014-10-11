@@ -1,4 +1,4 @@
-<?php
+<?php defined('COREPATH') or die('No direct script access.');
 /**
  * Created by PhpStorm.
  * User: BioDread
@@ -11,8 +11,8 @@ namespace core\utils;
 class Utils
 {
 
-	private  static $salt   = "9f65555006851acccaed052b03431f708124c077";      // for hashing
-	private static $seed    = "iportal";                                       // for encrypt/decrypt strings
+	private  static $salt   = "9f65555006851acccaed052b03431f708124c077";       // for hashing
+	private static $seed    = "ecmsseed";                                       // for encrypt/decrypt strings
 
 	/**
 	 * Get the current Date & Time
