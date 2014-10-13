@@ -9,7 +9,7 @@ class Welcome extends \core\base\Controller {
 	public function index ()
 	{
 		echo 'action "index" called from welcome controller<br>';
-		$this->model->index();
-		$this->view->render('welcome');
+		//$this->model->kasra();
+		//$this->view->render('welcome');
 	}
 } 

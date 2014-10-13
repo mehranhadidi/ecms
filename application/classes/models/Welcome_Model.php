@@ -6,8 +6,8 @@ class Welcome_Model extends \core\base\Model {
 		parent::__construct();
 	}
 
-	public function index ()
+	public function kasra ()
 	{
-		echo 'hello world from model';
+		echo 'hello kasra';
 	}
 } 

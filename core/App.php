@@ -41,6 +41,9 @@ class App
 	 * Initialize the application
 	 *  This method will do the items below :
 	 *      1.Parse the URI
+	 *      2.Parse Behaviors
+	 *
+	 * @param $default_values
 	 */
 	public function init ($default_values)
 	{
@@ -80,6 +83,8 @@ class App
 
 		// make uri accessible all over the class
 		$this->url = $url;
+
+		var_dump($this->url);
 	}
 
 	/**
@@ -182,7 +187,7 @@ class App
 				$this->action = (isset($this->url[1]) ? $this->url[1] : $this->default_action );
 				$this->param = (isset($this->url[2]) ? $this->url[2] : null );
 
-				// cont
+				// controller file path
 				$controller_file = APPPATH . 'classes' . DS . 'controllers' . DS . $this->controller . '.php';
 
 				if(file_exists($controller_file))

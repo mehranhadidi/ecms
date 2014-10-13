@@ -38,8 +38,15 @@ $app->init(array(
 	'action'                    => 'index',
 
 	// default module controller
-	'module_controller'         => 'init',
+	'module_controller'         => 'Welcome_Module',
 
 	// default module action
 	'module_action'             => 'index',
+
+	//TODO: separate default module action from the all module default action
 ));
+
+$user = new \core\database\DBObject('users');
+$user->findById(4);
+
+var_dump($user);
