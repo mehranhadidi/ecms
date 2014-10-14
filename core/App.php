@@ -57,6 +57,7 @@ class App
 			$this->default_module_action        = $default_values['module_action'];
 		}
 
+		//TODO fix bug
 		// Parse the URI
 		$this->parse_uri();
 
